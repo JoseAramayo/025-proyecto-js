@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/locale/es.js"></script>
+
+
+    <title>Proyecto completo JavaScript</title>
+</head>
+
+<body>
+    <section id="global">
+        <header>
+            <div id="logo">
+                <h1>Proyecto JavaScript</h1>
+            </div>
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Info Usuario</a></li>
+                    <li><a href="#">Reloj</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="slider">
+            <ul class="bxslider">
+                <li><img src="https://via.placeholder.com/800x250/4CAF50/white?text=Slide+1" /></li>
+                <li><img src="https://via.placeholder.com/800x250/2196F3/white?text=Slide+2" /></li>
+                <li><img src="https://via.placeholder.com/800x250/FF9800/white?text=Slide+3" /></li>
+            </ul>
+        </div>
+        <section id="contenido">
+            <div id="posts">
+                <article class="post">
+
+                </article>
+            </div>
+            <aside class="sidebar">
+                <div id="about">
+                    <h4>Acerca de mi <span>texto del título</span></h4>
+                    <img src="../img/caracol.jpg">
+                    <p>Texto descriptivo acerca del usuario</p>
+                </div>
+                <div id="login">
+                    <h4>Iniciar sesión</h4>
+                    <form>
+                        <label for="nombre"></label>
+                        <input type="text" name="nombre">
+
+                        <label for="correo"></label>
+                        <input type="email" name="correo">
+
+                        <label for="clave"></label>
+                        <input type="password" name="clave">
+                        <input type="submit" value="Ingresar">
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+
+        </section>
+    </section>
+
+
+    <footer>Cruso de JS - CT/UCSA&copy;</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="/js/proyecto.js"></script>
+
+</body>
+
+</html>
