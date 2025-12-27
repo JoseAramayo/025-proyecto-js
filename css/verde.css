@@ -1,0 +1,38 @@
+body {
+    background: url('../img/hojas.jpg');
+    background-attachment: fixed;
+}
+
+#logo {
+    font-family:
+        Verdana, Arial;
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 75px;
+    background:
+        green;
+    color: white;
+    text-align: center;
+    width: 585px;
+    height: 80px;
+    margin-bottom:
+        20px;
+    float: left;
+}
+
+#menu ul li:hover {
+    background: green;
+}
+
+.boton-mas {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 70px;
+    margin-bottom: 20px;
+}

@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilos.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="/css/azul.css">
+    <link rel="stylesheet" href="/css/rojo.css">
+    <link rel="stylesheet" href="/css/verde.css">
+
+    <!-- scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/locale/es.js"></script>
 
@@ -15,6 +21,11 @@
 </head>
 
 <body>
+    <div id="cambiador-temas">
+        <div id="verde" class="estilo"></div>
+        <div id="rojo"  class="estilo"></div>
+        <div id="azul"  class="estilo"></div>
+    </div>
     <section id="global">
         <header>
             <div id="logo">
@@ -40,14 +51,12 @@
         </div>
         <section id="contenido">
             <div id="posts">
-                <article class="post">
 
-                </article>
             </div>
             <aside class="sidebar">
                 <div id="about">
                     <h4>Acerca de mi <span>texto del título</span></h4>
-                    <img src="../img/caracol.jpg">
+                    <img src="/img/caracol.jpg">
                     <p>Texto descriptivo acerca del usuario</p>
                 </div>
                 <div id="login">

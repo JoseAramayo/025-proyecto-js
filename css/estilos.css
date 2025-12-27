@@ -180,3 +180,33 @@ footer {
 .bx-viewport {
     height: 250px !important;
 }
+
+#cambiador-temas {
+    position: fixed;
+    top: 40%;
+    background: rgba(51, 51, 51, 0.5);
+    width: 50px;
+    height: 100px;
+
+}
+
+#cambiador-temas div {
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#cambiador-temas #verde {
+    background: green;
+}
+#cambiador-temas #rojo {
+    background: red;
+}
+#cambiador-temas #azul {
+    background: blue;
+}
