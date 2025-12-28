@@ -71,17 +71,20 @@ body {
     background: green;
 }
 
-.post {
+#posts {
     width: 60%;
     float: left;
     font-family:
         Helvetica, Arial;
-    padding: 7px;
 }
 
 .post h2 {
     font-size: 30px;
     color: #333;
+}
+
+.post {
+    padding: 7px;
 }
 
 .post .fecha-publicacion {
@@ -137,7 +140,7 @@ body {
     padding: 5px;
 }
 
-sidebar p {
+.sidebar p {
     font-size: 15px;
     text-align: justify;
 }
@@ -176,6 +179,13 @@ footer {
     text-align: center;
 }
 
+.ir-arriba {
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
 .bx-wrapper,
 .bx-viewport {
     height: 250px !important;
@@ -204,9 +214,18 @@ footer {
 #cambiador-temas #verde {
     background: green;
 }
+
 #cambiador-temas #rojo {
     background: red;
 }
+
 #cambiador-temas #azul {
     background: blue;
+}
+
+.ir-arriba {
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
 }

@@ -1,6 +1,4 @@
 $(document).ready(function () {
-    const posts = $('#posts');
-    const estilos = document.querySelectorAll('.estilo');
 
     $('.bxslider').bxSlider();
 
@@ -25,6 +23,8 @@ $(document).ready(function () {
         }
     ];
 
+
+    const posts = $('#posts');
     moment.locale('es');
     postsJson.forEach((item, index) => {
         const fechaFormateada = moment(item.fecha).format('DD [de] MMMM [de] YYYY');
@@ -38,9 +38,43 @@ $(document).ready(function () {
         posts.append(postHTML)
     });
 
-    estilos.forEach(btn => {
-        btn.addEventListener('click', function () {
-            console.log("click", this.id);
+
+    const estilo = $('#estilo');
+    $('.estilo').on('click', function () {
+        const id = this.id;
+        estilo.attr('href', `css/${id}.css`);
+    });
+
+    const irArriba = document.querySelector('.ir-arriba');
+    irArriba.addEventListener('click', function (event) {
+        event.preventDefault();
+        $('body, html').animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const nombre = document.querySelector('#nombre').value;
+        localStorage.setItem('nombre_usu', nombre);
+        location.reload();
+        // return false;
+    });
+
+    const nombreUsuario = localStorage.getItem('nombre_usu');
+
+    if (nombreUsuario !== null && nombreUsuario !== undefined) {
+        const parrafo = $('#about p');
+        parrafo.html('<strong>Bienvenido:</strong> ' + nombreUsuario);
+        parrafo.append('<br><a href="#" id="logout">Cerrar Sesión</a>');
+        $('#login').hide();
+
+        $('#logout').on('click', function (event) {
+            event.preventDefault();
+            localStorage.clear();
+            location.reload();
+            return false;
         });
-    })
+    }
+
 });
