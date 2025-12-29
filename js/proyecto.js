@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-    $('.bxslider').bxSlider();
-
     const postsJson = [
         {
             titulo: "Primer post",
@@ -24,19 +22,26 @@ $(document).ready(function () {
     ];
 
 
-    const posts = $('#posts');
-    moment.locale('es');
-    postsJson.forEach((item, index) => {
-        const fechaFormateada = moment(item.fecha).format('DD [de] MMMM [de] YYYY');
-        const postHTML = `
+    if (window.location.href.indexOf("index") > -1) {
+        $('.bxslider').bxSlider();
+        const posts = $('#posts');
+        moment.locale('es');
+        postsJson.forEach((item, index) => {
+            const fechaFormateada = moment(item.fecha).format('DD [de] MMMM [de] YYYY');
+            const postHTML = `
         <article class="post">
             <h2>${item.titulo}</h2>
             <span class="fecha-publicacion">${fechaFormateada}</span>
             <p>${item.contenido}</p>
             <a href="${item.link}" class="boton-mas">Leer más</a>
         </article >`;
-        posts.append(postHTML)
-    });
+            posts.append(postHTML)
+        });
+    };
+
+    if (window.location.href.indexOf("info-usuario") > -1) {
+        $('#acordeon').accordion();
+    };
 
 
     const estilo = $('#estilo');
@@ -57,8 +62,8 @@ $(document).ready(function () {
         event.preventDefault();
         const nombre = document.querySelector('#nombre').value;
         localStorage.setItem('nombre_usu', nombre);
+        alert('¡Has iniciado sesión correctamente como ' + nombre + '!');
         location.reload();
-        // return false;
     });
 
     const nombreUsuario = localStorage.getItem('nombre_usu');
@@ -72,8 +77,8 @@ $(document).ready(function () {
         $('#logout').on('click', function (event) {
             event.preventDefault();
             localStorage.clear();
+            alert('¡Has cerrado sesión correctamente!');
             location.reload();
-            return false;
         });
     }
 
