@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     const postsJson = [
         {
             titulo: "Primer post",
@@ -48,10 +47,18 @@ $(document).ready(function () {
             let reloj = moment().format("hh:mm:ss");
 
             $('#reloj').html(reloj);
-
         }
-
         setInterval(actualizarReloj, 1000);
+    }
+
+    if (window.location.href.indexOf("contacto") > -1) {
+        $.validate({
+            lang: 'es',
+            errorMessagePosition: "top",
+            scrollToTopOnError: true
+        });
+        $("input[name='fecha-nacimiento']").datepicker();
+
     }
 
 
@@ -76,6 +83,7 @@ $(document).ready(function () {
         alert('¡Has iniciado sesión correctamente como ' + nombre + '!');
         location.reload();
     });
+
 
     const nombreUsuario = localStorage.getItem('nombre_usu');
 
