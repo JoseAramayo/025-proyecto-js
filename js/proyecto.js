@@ -43,6 +43,17 @@ $(document).ready(function () {
         $('#acordeon').accordion();
     };
 
+    if (window.location.href.indexOf("reloj") > -1) {
+        function actualizarReloj() {
+            let reloj = moment().format("hh:mm:ss");
+
+            $('#reloj').html(reloj);
+
+        }
+
+        setInterval(actualizarReloj, 1000);
+    }
+
 
     const estilo = $('#estilo');
     $('.estilo').on('click', function () {
