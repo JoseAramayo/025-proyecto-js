@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link id="estilo" rel="stylesheet" href="css/verde.css">
+
+    <link href="/js/jquery-ui-1.14.1/jquery-ui.css" rel="stylesheet" />
+    <link href="/js/jquery-ui-1.14.1/jquery-ui.min.css" rel="stylesheet" />
+    <link href="/js/jquery-ui-1.14.1/jquery-ui.structure.css" rel="stylesheet" />
+    <link href="/js/jquery-ui-1.14.1/jquery-ui.structure.min.css" rel="stylesheet" />
+    <link href="/js/jquery-ui-1.14.1/jquery-ui.theme.css" rel="stylesheet" />
+    <link href="/js/jquery-ui-1.14.1/jquery-ui.theme.min.css" rel="stylesheet" />
+
+    <!-- scripts -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery-ui-1.14.1/jquery-ui.js"></script>
+    <script src="js/jquery-ui-1.14.1/jquery-ui.min.js"></script>
+    <script src="./js/proyecto.js"></script>
+
+
+    <title>Proyecto completo JavaScript</title>
+</head>
+
+<body>
+    <div id="cambiador-temas">
+        <div id="verde" class="estilo"></div>
+        <div id="rojo" class="estilo"></div>
+        <div id="azul" class="estilo"></div>
+    </div>
+    <section id="global">
+        <header>
+            <div id="logo">
+                <h1>Proyecto JavaScript</h1>
+            </div>
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./info-usuario.html">Info Usuario</a></li>
+                    <li><a href="./reloj.html">Reloj</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="contenido">
+            <div id="info">
+                <h2>Contacto</h2>
+                <form class="form-contacto">
+                    <label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre">
+                    <label for="apellido">Apellido: </label><input type="text" name="apellido" id="apellido">
+                    <label for="correo-contacto">Email: </label><input type="email" name="correo" id="correo-contacto">
+                    <label for="sexo">Sexo: </label><select name="sexo" id="sexo">
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                    </select>
+                    <label for="fecha-nacimiento">Fecha de nacimiento: </label><input type="text"
+                        name="fecha-nacimiento" id="fecha-nacimiento">
+                    <br>
+                    <label for="edad">Edad: </label><input type="number" name="edad" id="edad">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <aside class="sidebar">
+                <div id="about">
+                    <h4><span>Acerca de mi </span></h4>
+                    <img src="img/caracol.jpg">
+                    <p>Texto descriptivo acerca del usuario</p>
+                </div>
+                <div id="login">
+                    <form>
+                        <h4>Iniciar sesión</h4>
+                        <about>
+                            <label for="nombre"></label>
+                            <input type="text" name="nombre" id="nombre">
+
+                            <label for="correo"></label>
+                            <input type="email" name="correo" id="correo">
+
+                            <label for="clave"></label>
+                            <input type="password" name="clave" id="clave">
+                            <input type="submit" value="Ingresar">
+                        </about>
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+
+        </section>
+    </section>
+
+
+    <footer>Curso de JS - CT/UCSA &copy;
+        <a href="" class="ir-arriba">Ir arriba</a>
+    </footer>
+
+</body>
+
+</html>

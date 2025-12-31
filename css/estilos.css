@@ -150,13 +150,28 @@ h2 {
     text-align: justify;
 }
 
+.form-contacto{
+    padding-right: 300px;
+}
+
 form input[type="text"],
 form input[type="email"],
-form input[type="password"] {
+form input[type="password"],
+form input[type="number"]{
     padding: 5px;
     border-radius: 2px;
     border: 1px solid #ccc;
-    width: 85%;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+form select {
+    display: block;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 100%;
     margin-bottom: 10px;
     margin-top: 5px;
 }
