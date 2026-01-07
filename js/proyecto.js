@@ -51,7 +51,7 @@ $(document).ready(function () {
         setInterval(actualizarReloj, 1000);
     }
 
-    if (window.location.href.indexOf("contacto") > -1) {
+    if (window.location.href.indexOf("Contacto") > -1) {
         $.validate({
             lang: 'es',
             errorMessagePosition: "top",
@@ -75,7 +75,7 @@ $(document).ready(function () {
         return false;
     });
 
-    const form = document.querySelector('form');
+    const form = document.querySelector('#form-login');
     form.addEventListener('submit', function (event) {
         event.preventDefault();
         const nombre = document.querySelector('#nombre').value;

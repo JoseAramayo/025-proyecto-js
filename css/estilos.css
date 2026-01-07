@@ -270,7 +270,7 @@ footer {
 }
 
 #form-contacto {
-    width: 50%;
+    padding-inline: 100px;
     margin-top: 15px;
     font-family: Helvetica, Arial;
 }
